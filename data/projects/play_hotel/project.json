@@ -1,0 +1,83 @@
+{
+  "slug": "play_hotel",
+  "type": "comercial",
+  "title": "PLAY Hotel",
+  "location": "Ukraine, Lviv oblast",
+  "year": "2025",
+  "description": "The hotel design project is inspired by the rich traditions of the Boyko region, located in the heart of Boykivshchyna. The interior combines authentic Ukrainian ethnic elements—natural wood, traditional ornaments, and handcrafted details—to create a warm and culturally immersive atmosphere. The concept aims to preserve local heritage while offering guests a comfortable and modern hospitality experience.",
+  "cover": "cover.webp",
+  "day-night": {
+    "day": "day.webp",
+    "night": "night.webp"
+  },
+  "spaces": [
+    {
+      "name": "Apartment",
+      "folder": "apartment",
+      "images": [
+        "1.webp",
+        "2.webp",
+        "3.webp",
+        "4.webp",
+        "5.webp",
+        "6.webp",
+        "7.webp",
+        "8.webp",
+        "9.webp",
+        "10.webp"
+       
+      ]
+    },
+    {
+      "name": "Massage Room",
+      "folder": "massage_room",
+      "images": [
+        "1.webp",
+        "2.webp",
+        "3.webp",
+        "4.webp",
+        "5.webp",
+        "6.webp"
+        
+        
+       
+      ]
+    },
+    {
+      "name": "Tea Room",
+      "folder": "tea_room",
+      "images": [
+        "1.webp",
+        "2.webp",
+        "3.webp",
+        "4.webp",
+        "5.webp",
+        "6.webp",
+        "7.webp",
+        "8.webp"
+        
+        
+       
+      ]
+    },
+    {
+      "name": "Yoga Room",
+      "folder": "yoga_room",
+      "images": [
+        "1.webp",
+        "2.webp",
+        "3.webp",
+        "4.webp",
+        "5.webp",
+        "6.webp",
+        "7.webp",
+        "8.webp",
+        "9.webp",
+        "10.webp",
+        "11.webp"
+       
+      ]
+    }
+    
+  ]
+}

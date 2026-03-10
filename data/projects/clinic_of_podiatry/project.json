@@ -1,0 +1,25 @@
+{
+  "slug": "clinic_of_podiatry",
+  "type": "comercial",
+  "title": "Clinic of Podiatry",
+  "location": "Austria, Wien",
+  "year": "2024",
+  "description": "A bright podiatry office designed in a calm, light color palette that emphasizes cleanliness and comfort. Terrazzo tiles add subtle texture and a contemporary character while remaining a practical and durable choice for a medical environment. Minimalist forms and soft lighting create a professional yet welcoming atmosphere for clients",
+  "cover": "cover.webp",
+  "spaces": [
+    {
+      "name": "Cabinet",
+      "folder": "cabinet",
+      "images": [
+        "1.webp",
+        "2.webp",
+        "3.webp",
+        "4.webp",
+        "5.webp",
+        "6.webp",
+        "7.webp",
+        "8.webp"
+      ]
+    }
+  ]
+}

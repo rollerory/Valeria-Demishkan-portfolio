@@ -1,0 +1,58 @@
+{
+  "slug": "nine_element_house",
+  "type": "comercial",
+  "title": "9 Element House",
+  "location": "Ukraine, Kyiv oblast",
+  "year": "2025",
+  "description": "A contemporary private residence in a luxury style where minimalism meets elegance and thoughtful functionality. The space is filled with natural light through panoramic windows, while natural materials such as stone, wood, and metal create a sense of status and comfort. The interior features a restrained color palette, clean lines, and premium accents that shape an atmosphere of modern luxury and privacy.",
+  "cover": "cover.webp",
+  "day-night": {
+    "day": "day.webp",
+    "night": "night.webp"
+  },
+  "spaces": [
+    {
+      "name": "Master Block",
+      "folder": "master",
+      "images": [
+        "1.webp",
+        "2.webp",
+        "3.webp",
+        "4.webp",
+        "5.webp",
+        "6.webp",
+        "7.webp",
+        "8.webp",
+        "9.webp",
+        "10.webp",
+        "11.webp",
+        "12.webp",
+        "13.webp",
+        "14.webp",
+        "15.webp",
+        "16.webp"
+      ]
+    },
+    {
+      "name": "Guest Block",
+      "folder": "guest",
+      "images": [
+        "1.webp",
+        "2.webp",
+        "3.webp",
+        "4.webp",
+        "5.webp",
+        "6.webp",
+        "7.webp",
+        "8.webp",
+        "9.webp",
+        "10.webp",
+        "11.webp",
+        "12.webp",
+        "13.webp",
+        "14.webp",
+        "15.webp"
+      ]
+    }
+  ]
+}

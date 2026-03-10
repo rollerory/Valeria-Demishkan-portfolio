@@ -1,0 +1,19 @@
+{
+  "slug": "contemporary_kitchen",
+  "type": "comercial",
+  "title": "Contemporary Kitchen",
+  "location": "Ukraine, Kyiv",
+  "year": "2023",
+  "description": "This contemporary kitchen showcases the luxurious elegance of Calacatta Gold marble, seamlessly paired with aged metallic cabinetry for a sophisticated industrial edge. The design balances opulence and modern minimalism, creating a striking yet functional culinary space. Subtle textures and reflective surfaces enhance light, emphasizing the kitchen’s refined craftsmanship.",
+  "cover": "cover.webp",
+  "spaces": [
+    {
+      "name": "Kitchen",
+      "folder": "kitchen",
+      "images": [
+        "1.webp",
+        "2.webp"
+      ]
+    }
+  ]
+}

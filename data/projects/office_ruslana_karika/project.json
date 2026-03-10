@@ -1,0 +1,33 @@
+{
+  "slug": "office_ruslana_karika",
+  "type": "comercial",
+  "title": "Office for Ruslana Karika",
+  "location": "Ukraine, Kyiv",
+  "year": "2025",
+  "description": "A light-filled office designed for a fashion designer, created in calm neutral tones that highlight creativity and clarity. Light wood surfaces bring warmth, while sculptural wavy glass elements add softness and movement, subtly echoing the fluidity of fabric. The space balances minimalism with elegance, forming a refined backdrop for the design process.",
+  "cover": "cover.webp",
+  "spaces": [
+    {
+      "name": "Office",
+      "folder": "office",
+      "images": [
+        "1.webp",
+        "2.webp",
+        "3.webp",
+        "4.webp",
+        "5.webp",
+        "6.webp",
+        "7.webp",
+        "8.webp",
+        "9.webp",
+        "10.webp",
+        "11.webp",
+        "12.webp",
+        "13.webp",
+        "14.webp",
+        "15.webp"
+      ]
+    }
+    
+  ]
+}
