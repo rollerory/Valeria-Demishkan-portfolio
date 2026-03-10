@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed } from "vue";
+import { onMounted, ref } from "vue";
 import { Swiper, SwiperSlide } from "swiper/vue";
 import { Navigation } from "swiper/modules";
 import Title from "./Title.vue";
@@ -7,13 +7,13 @@ import Title from "./Title.vue";
 import "swiper/css";
 import "swiper/css/navigation";
 
-const projectModules = import.meta.glob("@/data/trainee/trainee.json", {
-  eager: true,
-});
+const baseUrl = import.meta.env.BASE_URL;
+const traineeProjects = ref<any[]>([]);
 
-const traineeProjects = computed(() =>
-  Object.values(projectModules).flatMap((m: any) => m.default ?? []),
-);
+onMounted(async () => {
+  const res = await fetch(`${baseUrl}data/trainee/trainee.json`);
+  traineeProjects.value = await res.json();
+});
 </script>
 
 <template>
@@ -37,7 +37,7 @@ const traineeProjects = computed(() =>
         >
           <div class="project-slide__img">
             <img
-              :src="`/data/trainee/${project.folder}/${project.images?.[0] ?? ''}`"
+              :src="`${baseUrl}data/trainee/${project.folder}/${project.images?.[0] ?? ''}`"
               :alt="project.folder"
               loading="lazy"
             />

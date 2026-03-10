@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed } from "vue";
+import { computed, onMounted, ref } from "vue";
 import { Swiper, SwiperSlide } from "swiper/vue";
 import { Navigation } from "swiper/modules";
 import Title from "./Title.vue";
@@ -7,14 +7,16 @@ import Title from "./Title.vue";
 import "swiper/css";
 import "swiper/css/navigation";
 
-const projectModules = import.meta.glob("@/data/projects/**/project.json", {
-  eager: true,
+const baseUrl = import.meta.env.BASE_URL;
+const allProjects = ref<any[]>([]);
+
+onMounted(async () => {
+  const res = await fetch(`${baseUrl}data/projects/projects.json`);
+  allProjects.value = await res.json();
 });
 
-const projects = Object.values(projectModules).map((m: any) => m.default);
-
 const commercialProjects = computed(() =>
-  projects
+  allProjects.value
     .filter((p) => p.type === "comercial")
     .sort((a, b) => {
       const yearDiff = Number(b.year) - Number(a.year);
@@ -42,7 +44,7 @@ const commercialProjects = computed(() =>
           <router-link :to="`/projects/${project.slug}`" class="project-slide">
             <div class="project-slide__img">
               <img
-                :src="`/data/projects/${project.slug}/${project.cover}`"
+                :src="`${baseUrl}data/projects/${project.slug}/${project.cover}`"
                 :alt="project.title"
                 loading="lazy"
               />

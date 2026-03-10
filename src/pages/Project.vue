@@ -5,25 +5,21 @@ import Title from "@/components/Title.vue";
 import ModalImg from "@/components/ModalImg.vue";
 import Switcher from "@/components/Switcher.vue";
 
-const projectModules = import.meta.glob("@/data/projects/**/project.json", {
-  eager: true,
-});
-const projects = Object.values(projectModules).map((m: any) => m.default);
-
 const route = useRoute();
 const router = useRouter();
 const slug = computed(() => String(route.params.slug));
 
-const project = computed(() => projects.find((p) => p.slug === slug.value));
+const baseUrl = import.meta.env.BASE_URL;
+const project = ref<any>(null);
 const dayNight = computed(() => project.value?.["day-night"]);
 const dayNightDaySrc = computed(() =>
   dayNight.value
-    ? `/data/projects/${project.value?.slug}/day-night/${dayNight.value.day}`
+    ? `${baseUrl}data/projects/${project.value?.slug}/day-night/${dayNight.value.day}`
     : ""
 );
 const dayNightNightSrc = computed(() =>
   dayNight.value
-    ? `/data/projects/${project.value?.slug}/day-night/${dayNight.value.night}`
+    ? `${baseUrl}data/projects/${project.value?.slug}/day-night/${dayNight.value.night}`
     : ""
 );
 
@@ -47,12 +43,15 @@ const closeModalImg = () => {
   modalImage.value = "";
 };
 
-onMounted(() => {
+onMounted(async () => {
+  const res = await fetch(`${baseUrl}data/projects/${slug.value}/project.json`);
+  if (!res.ok) {
+    router.replace({ name: "Home" });
+    return;
+  }
+  project.value = await res.json();
   updateIsDesktop();
   window.addEventListener("resize", updateIsDesktop);
-  if (!project.value) {
-    router.replace({ name: "Home" });
-  }
 });
 
 onBeforeUnmount(() => {
@@ -88,11 +87,11 @@ onBeforeUnmount(() => {
             v-for="img in space.images"
             :key="img"
             class="space__image"
-            :src="`/data/projects/${project.slug}/${space.folder}/${img}`"
+            :src="`${baseUrl}data/projects/${project.slug}/${space.folder}/${img}`"
             :alt="space.name"
             loading="lazy"
-            @click="openModalImg(`/data/projects/${project.slug}/${space.folder}/${img}`)"
-            @pointerup="openModalImg(`/data/projects/${project.slug}/${space.folder}/${img}`)"
+            @click="openModalImg(`${baseUrl}data/projects/${project.slug}/${space.folder}/${img}`)"
+            @pointerup="openModalImg(`${baseUrl}data/projects/${project.slug}/${space.folder}/${img}`)"
           />
         </div>
       </section>

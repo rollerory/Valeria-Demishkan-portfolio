@@ -1,0 +1,90 @@
+[
+  {
+    "slug": "alpine_rd",
+    "type": "comercial",
+    "title": "Alpine RD",
+    "location": "USA, New Jersey",
+    "year": "2024",
+    "cover": "cover.webp"
+  },
+  {
+    "slug": "clinic_of_podiatry",
+    "type": "comercial",
+    "title": "Clinic of Podiatry",
+    "location": "Austria, Wien",
+    "year": "2024",
+    "cover": "cover.webp"
+  },
+  {
+    "slug": "contemporary_kitchen",
+    "type": "comercial",
+    "title": "Contemporary Kitchen",
+    "location": "Ukraine, Kyiv",
+    "year": "2023",
+    "cover": "cover.webp"
+  },
+  {
+    "slug": "modern_classic_office_redesign",
+    "type": "comercial",
+    "title": "Modern Classic Office Redesign",
+    "location": "Ukraine, Kyiv",
+    "year": "2024",
+    "cover": "cover.webp"
+  },
+  {
+    "slug": "modern_kitchen_design",
+    "type": "comercial",
+    "title": "Modern Kitchen Design",
+    "location": "Ukraine, Lviv",
+    "year": "2023",
+    "cover": "cover.webp"
+  },
+  {
+    "slug": "nine_element_house",
+    "type": "comercial",
+    "title": "9 Element House",
+    "location": "Ukraine, Kyiv oblast",
+    "year": "2025",
+    "cover": "cover.webp"
+  },
+  {
+    "slug": "office_ruslana_karika",
+    "type": "comercial",
+    "title": "Office for Ruslana Karika",
+    "location": "Ukraine, Kyiv",
+    "year": "2025",
+    "cover": "cover.webp"
+  },
+  {
+    "slug": "pechersk_plaza_apartment",
+    "type": "comercial",
+    "title": "Pechersk Plaza Apartment",
+    "location": "Ukraine, Kyiv",
+    "year": "2025",
+    "cover": "cover.webp"
+  },
+  {
+    "slug": "play_hotel",
+    "type": "comercial",
+    "title": "PLAY Hotel",
+    "location": "Ukraine, Lviv oblast",
+    "year": "2025",
+    "cover": "cover.webp"
+  },
+  {
+    "slug": "vietnam_danang_penthouse",
+    "type": "comercial",
+    "title": "Vietnam DaNang Penthouse",
+    "location": "Vietnam, DaNang",
+    "year": "2025",
+    "cover": "cover.webp"
+  },
+  {
+    "slug": "voce_hotel_terrace",
+    "type": "comercial",
+    "title": "VOCE Hottel Terrace ",
+    "location": "USA, Nashville",
+    "year": "2024",
+    "cover": "cover.webp"
+  }
+]

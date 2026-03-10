@@ -5,17 +5,18 @@ import { Navigation } from "swiper/modules";
 import Switcher from "@components/Switcher.vue";
 import Title from "@/components/Title.vue";
 import ModalImg from "@/components/ModalImg.vue";
-import traineeData from "@/data/trainee/trainee.json";
-
 import "swiper/css";
 import "swiper/css/navigation";
+
+const baseUrl = import.meta.env.BASE_URL;
+const traineeData = ref([]);
 
 type TraineeProject = {
   folder: string;
   images: string[];
 };
 
-const traineeProjects = computed(() => (traineeData as TraineeProject[]) ?? []);
+const traineeProjects = computed(() => (traineeData.value as TraineeProject[]) ?? []);
 
 const isModalOpen = ref<boolean>(false);
 const modalImage = ref<string>("");
@@ -37,7 +38,9 @@ const closeModalImg = () => {
   modalImage.value = "";
 };
 
-onMounted(() => {
+onMounted(async () => {
+  const res = await fetch(`${baseUrl}data/trainee/trainee.json`);
+  traineeData.value = await res.json();
   updateIsDesktop();
   window.addEventListener("resize", updateIsDesktop);
 });
@@ -77,11 +80,11 @@ onBeforeUnmount(() => {
             >
               <div class="trainee-page__item-img">
                 <img
-                  :src="`/data/trainee/${project.folder}/${image}`"
+                  :src="`${baseUrl}data/trainee/${project.folder}/${image}`"
                   :alt="project.folder"
                   loading="lazy"
-                  @click="openModalImg(`/data/trainee/${project.folder}/${image}`)"
-                  @pointerup="openModalImg(`/data/trainee/${project.folder}/${image}`)"
+                  @click="openModalImg(`${baseUrl}data/trainee/${project.folder}/${image}`)"
+                  @pointerup="openModalImg(`${baseUrl}data/trainee/${project.folder}/${image}`)"
                 />
               </div>
             </SwiperSlide>
