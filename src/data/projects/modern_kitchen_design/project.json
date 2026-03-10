@@ -1,0 +1,19 @@
+{
+  "slug": "modern_kitchen_design",
+  "type": "comercial",
+  "title": "Modern Kitchen Design",
+  "location": "Ukraine, Lviv",
+  "year": "2023",
+  "description": "This modern kitchen embraces a bright, airy palette, combining sleek contemporary lines with subtle neoclassical details. Soft textures and refined accents create an elegant yet inviting atmosphere, balancing functionality with timeless sophistication.",
+  "cover": "cover.webp",
+  "spaces": [
+    {
+      "name": "Kitchen",
+      "folder": "kitchen",
+      "images": [
+        "1.webp",
+        "2.webp"
+      ]
+    }
+  ]
+}

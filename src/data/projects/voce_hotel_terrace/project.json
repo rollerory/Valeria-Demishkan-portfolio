@@ -1,0 +1,25 @@
+{
+  "slug": "voce_hotel_terrace",
+  "type": "comercial",
+  "title": "VOCE Hottel Terrace ",
+  "location": "USA, Nashville",
+  "year": "2024",
+  "description": "A terrace on the 23rd floor of the hotel, designed in soft natural tones that create a calm and airy atmosphere above the city. Abundant greenery is thoughtfully integrated throughout the space, blurring the line between architecture and nature. The result is a serene, elevated retreat that invites guests to relax while enjoying panoramic views.",
+  "cover": "cover.webp",
+  "spaces": [
+    {
+      "name": "Terrace",
+      "folder": "terrace",
+      "images": [
+        "1.webp",
+        "2.webp",
+        "3.webp",
+        "4.webp",
+        "5.webp",
+        "6.webp",
+        "7.webp",
+        "8.webp"
+      ]
+    }
+  ]
+}

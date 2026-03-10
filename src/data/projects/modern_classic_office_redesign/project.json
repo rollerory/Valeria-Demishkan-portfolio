@@ -1,0 +1,23 @@
+{
+  "slug": "modern_classic_office_redesign",
+  "type": "comercial",
+  "title": "Modern Classic Office Redesign",
+  "location": "Ukraine, Kyiv",
+  "year": "2024",
+  "description": "A contemporary home office in a modern classic style that blends elegant architectural details with soft, sculptural furniture forms and curated art pieces. Warm neutral tones, natural textures, and statement lighting create a refined and sophisticated atmosphere. Contemporary artwork adds character to the space, giving it the feel of a private gallery.",
+  "cover": "cover.webp",
+  "spaces": [
+    {
+      "name": "Office",
+      "folder": "office",
+      "images": [
+        "1.webp",
+        "2.webp",
+        "3.webp",
+        "4.webp",
+        "5.webp",
+        "6.webp"
+      ]
+    }
+  ]
+}

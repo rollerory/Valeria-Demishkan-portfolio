@@ -1,0 +1,39 @@
+{
+  "slug": "alpine_rd",
+  "type": "comercial",
+  "title": "Alpine RD",
+  "location": "USA, New Jersey",
+  "year": "2024",
+  "description": "The house interior is designed in an American interpretation of the wabi-sabi style, featuring a calm palette, natural textures, and a sense of understated imperfection. The space is filled with the warmth of natural wood, stone, and soft textiles, where each element highlights authenticity and simplicity. The atmosphere creates a feeling of harmony, quiet elegance, and effortless comfort.",
+  "cover": "cover.webp",
+  "spaces": [
+    {
+      "name": "Living Room",
+      "folder": "living_room",
+      "images": [
+        "1.webp",
+        "2.webp",
+        "3.webp",
+        "4.webp"
+      ]
+    },
+    {
+      "name": "Bedroom",
+      "folder": "bedroom",
+      "images": [
+        "1.webp",
+        "2.webp",
+        "3.webp"
+      ]
+    },
+    {
+      "name": "Children room",
+      "folder": "children_room",
+      "images": [
+        "1.webp",
+        "2.webp",
+        "3.webp"
+      ]
+    }
+  ]
+}

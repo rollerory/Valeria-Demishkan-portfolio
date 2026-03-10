@@ -1,0 +1,33 @@
+@use '@assets/styles/vars' as *;
+@use '@assets/styles/typography' as *;
+@use '@assets/styles/reset' as *;
+@use '@assets/styles/mixins' as *;
+
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+img {
+    width: 100%;
+}
+
+body {
+    font-family: 'Sansation', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 140%;
+    @include media-md {
+        font-size: 22px;
+    }
+}
+
+.container {
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+section {
+    margin-bottom: 100px;
+    @include media-md {
+        margin-bottom: 150px;
+    }
+}

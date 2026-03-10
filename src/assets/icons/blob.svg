@@ -1,0 +1,19 @@
+<svg width="1706" height="1566" viewBox="0 0 1706 1566" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g filter="url(#blurFilter)">
+    <path d="M389.746 458.574C447.346 230.974 718.079 234.407 846.246 264.574C1015.25 304.351 1280.86 291.026 1271.75 458.574C1255.75 752.574 1562.25 755.574 1415.25 1009.07C1268.25 1262.57 1187.25 971.574 930.746 1212.57C674.246 1453.57 -14.4126 1243.76 358.246 855.574C502.246 705.574 317.746 743.074 389.746 458.574Z" fill="#ffe0b2"/>
+  </g>
+
+  <defs>
+    <filter id="blurFilter"
+            x="0"
+            y="0"
+            width="1705.26"
+            height="1565.16"
+            filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB">
+      
+      <feGaussianBlur stdDeviation="125" />
+      
+    </filter>
+  </defs>
+</svg>
