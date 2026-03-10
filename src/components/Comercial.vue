@@ -42,7 +42,7 @@ const commercialProjects = computed(() =>
           <router-link :to="`/projects/${project.slug}`" class="project-slide">
             <div class="project-slide__img">
               <img
-                :src="`/src/data/projects/${project.slug}/${project.cover}`"
+                :src="`/data/projects/${project.slug}/${project.cover}`"
                 :alt="project.title"
                 loading="lazy"
               />

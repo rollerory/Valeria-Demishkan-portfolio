@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 import Home from '../pages/Home.vue'
 import Timeline from '../pages/Comercial.vue'
 import About from '../pages/Trainee.vue'
@@ -29,18 +29,14 @@ const routes = [
 ]
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHashHistory(),
   routes,
-  // ensure navigation scrolls to top of page
   scrollBehavior(to, from, savedPosition) {
-    void to
-    void from
-    // if the user used browser back/forward, respect saved position
     if (savedPosition) {
-      return savedPosition;
+      return savedPosition
     }
-    // always scroll to top for new navigation
-    return { top: 0 };
+
+    return { top: 0 }
   }
 })
 

@@ -18,12 +18,12 @@ const project = computed(() => projects.find((p) => p.slug === slug.value));
 const dayNight = computed(() => project.value?.["day-night"]);
 const dayNightDaySrc = computed(() =>
   dayNight.value
-    ? `/src/data/projects/${project.value?.slug}/day-night/${dayNight.value.day}`
+    ? `/data/projects/${project.value?.slug}/day-night/${dayNight.value.day}`
     : ""
 );
 const dayNightNightSrc = computed(() =>
   dayNight.value
-    ? `/src/data/projects/${project.value?.slug}/day-night/${dayNight.value.night}`
+    ? `/data/projects/${project.value?.slug}/day-night/${dayNight.value.night}`
     : ""
 );
 
@@ -88,11 +88,11 @@ onBeforeUnmount(() => {
             v-for="img in space.images"
             :key="img"
             class="space__image"
-            :src="`/src/data/projects/${project.slug}/${space.folder}/${img}`"
+            :src="`/data/projects/${project.slug}/${space.folder}/${img}`"
             :alt="space.name"
             loading="lazy"
-            @click="openModalImg(`/src/data/projects/${project.slug}/${space.folder}/${img}`)"
-            @pointerup="openModalImg(`/src/data/projects/${project.slug}/${space.folder}/${img}`)"
+            @click="openModalImg(`/data/projects/${project.slug}/${space.folder}/${img}`)"
+            @pointerup="openModalImg(`/data/projects/${project.slug}/${space.folder}/${img}`)"
           />
         </div>
       </section>
