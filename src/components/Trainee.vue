@@ -37,7 +37,7 @@ const traineeProjects = computed(() =>
         >
           <div class="project-slide__img">
             <img
-              :src="`/src/data/trainee/${project.folder}/${project.images?.[0] ?? ''}`"
+              :src="`/data/trainee/${project.folder}/${project.images?.[0] ?? ''}`"
               :alt="project.folder"
               loading="lazy"
             />

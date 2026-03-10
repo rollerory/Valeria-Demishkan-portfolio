@@ -77,11 +77,11 @@ onBeforeUnmount(() => {
             >
               <div class="trainee-page__item-img">
                 <img
-                  :src="`/src/data/trainee/${project.folder}/${image}`"
+                  :src="`/data/trainee/${project.folder}/${image}`"
                   :alt="project.folder"
                   loading="lazy"
-                  @click="openModalImg(`/src/data/trainee/${project.folder}/${image}`)"
-                  @pointerup="openModalImg(`/src/data/trainee/${project.folder}/${image}`)"
+                  @click="openModalImg(`/data/trainee/${project.folder}/${image}`)"
+                  @pointerup="openModalImg(`/data/trainee/${project.folder}/${image}`)"
                 />
               </div>
             </SwiperSlide>
